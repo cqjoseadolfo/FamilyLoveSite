@@ -1,0 +1,249 @@
+/* external fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+/* variables */
+:root{
+    --purple-color:#6c4675;
+    --white-color:white;
+
+}
+
+
+/* estilos */
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Pangolin', cursive;   
+ }
+
+label{
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+    padding: 10pxx;
+    color:var(--white-color);
+    justify-content: space-between;
+    align-items: center ;
+}
+
+nav .brand_image img{
+    width: 50%;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: fuchsia;
+    font-size: 30px; 
+    font-family: Arial Black;
+    font-weight: bold; 
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+
+}
+
+nav li a:hover{
+    color:var(--white-color);
+}
+
+/* Seccion principal */
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* lista de items */
+.itemslist{
+    background-image: url("https://i.imgur.com/6Kz1Pxb.png");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+.item{
+    padding: 10px;
+    margin-top: -240px;
+    text-align: center;
+  }
+
+.img_content{
+    text-align: center;
+}
+
+.img_content img{
+    width: 60%;
+    height: auto;
+}
+  
+.item .content{
+    background-color: var(--white-color);
+    padding: 20px;
+    box-shadow: 0 0 3.5px #aba2a2;
+  }
+  
+
+/* Boton main section index */
+
+.main_button{
+    background-color: var(--purple-color);
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.main_button:hover{
+    background-color: #9044a2;
+}
+
+/* informacion index*/ 
+
+.informationlist{
+    padding: 10%;
+    display: flex;
+    text-align: justify;
+}
+
+.boxinformation{
+    text-align: center;
+    /* padding: 20px; */
+    padding: 10%;
+}
+
+.boxinformation img{
+    max-height: 100px;
+}
+
+.text_information{
+    text-align: center;
+}
+
+/* titulo seccion de  opinion index*/
+
+.titulo_opinion h1{
+    font-size: 23px;
+    text-align: center;
+    padding: 5%;
+}/* h2.mention_title{ */
+
+/* opinion index*/
+
+.list_opinion{
+    display: flex;
+    padding: 5%;
+}
+.box_opinion img{
+    width: 100%;
+}
+.box_opinion{
+    padding: 10px;
+}
+.box_opinion p{
+    text-align: center;
+}
+
+.content_opinion h1{
+    text-align: center;
+    font-size: 15px;
+}
+.content_opinion{
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 0 0 2.5px #aba2a2;
+}
+
+/* barra final footer */
+
+.barrafinal{
+    display: flex;
+    background-color: #313337;
+    color: white;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* sistema de grillas item.html page*/
+.col-3 img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.col-7 p{
+    font-size: 22px;
+}
+
+/* dark mode for all pages*/
+
+body{
+    background-color: #3a313c;
+    color:#b1afaf;
+}
+
+ /* venta.html */
+ .modulopago{
+    background-color: #755363;
+    box-shadow: 0px 0 10px 3px #62588c;
+    padding: 10px;
+
+}
+
+.modulopago_image{
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
+}
+
+.modulopago p{
+    font-size: 15px; 
+}
+
+/*formulario pago (datos)*/
+.data{
+    /*posicion tel texbox top bottom*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    /* ajustar tamaño 97% de texbox al contenedor modulopago, porque si pongo 100%, choca con la sombra del borde ---> width: 97%;*/
+    width: 100%;
+    /* otra solucion mas correcta es, aclarar que tome el 100% con referencia al borde de la caja*/
+    box-sizing: border-box;
+
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    border:solid #8578ad;
+    color:#9757a7;
+    background-color:#efcd9b;
+    padding-left: 10px;
+}
+
+.modulopago .main_button{
+    margin-top: 10px;
+}
+
+a{
+    color: white;
+}

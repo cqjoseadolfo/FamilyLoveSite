@@ -1,0 +1,20 @@
+@media (max-width: 600px){
+    .itemslist{
+        display: inherit;
+        height: auto;
+    }
+    .item{
+        margin-top: auto;
+    }
+    .main_section{
+        padding: 4%;
+    }
+
+    .list_opinion{
+        display: inherit;
+    }
+
+    .informationlist{
+        display: inherit;
+    }
+} 
